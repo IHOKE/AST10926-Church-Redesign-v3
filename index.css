@@ -1,1 +1,117 @@
 @charset "utf-8";
+
+header {
+    background-image: url(/images/index/header.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 450px;
+}
+
+.header-godray {
+
+    background:linear-gradient( 0deg,
+        rgba(131, 197, 190, 0) 0%,
+        var(--color-primary-2) 100%);
+
+    height: 380px;
+    width: 280px;
+
+}
+
+.header-col {
+    min-width: 280px;
+    max-width: 350px !important;
+}
+
+.header-emblem {
+    border: solid 4px var(--color-primary-1);
+    border-radius: 30px;
+
+    height: 200px;
+    width: 200px;
+
+    top: 120px;
+
+    background-color:hsl(0 0 100 / 25%);
+    filter:drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}
+
+.header-emblem img {
+    height: 100%;
+    padding: 10px;
+}
+
+.header-body {
+    position:relative;
+    top: -50px;
+    left: 45px;
+
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.s1 {
+    background: var(--color-primary-2);
+    width: 100% !important;
+}
+
+.s1-header {
+    color: white;
+    background-color: var(--color-primary-1);
+    padding:10px;
+    min-height: 58px;
+}
+
+.s1-header h2 {
+    font-size: max(5vw, 30px);
+    height: 6vw;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.s1-cards {
+    padding: 40px 0px 40px 0px;
+}
+
+.s1-fade-start {
+    height:20px;
+    background:linear-gradient(0deg, var(--color-primary-2) 0%, rgba(0,0,0,0.4) 100%);
+    margin-bottom: 20px;
+}
+
+.s1-fade-end {
+    height:30px;
+    background:linear-gradient(180deg, var(--color-primary-2) 0%, var(--color-white) 100%);
+    margin: 20px 0px;
+}
+
+.s2 {
+    padding: 0px 0px 30px 0px;
+}
+
+.s2-right {
+    --h-s2-right: 600px;
+    height: var(--h-s2-right);
+
+    background-color: var(--color-font-white);
+
+    border: solid;
+    border-radius: 0px 25px 25px 0px;
+    margin: 0px 15vw 0px 0px;
+}
+
+.s2-slide {
+    height: 100%;
+    padding: 30px 2vw;
+}
+
+.s2-slide-img {
+    border: solid 2px;
+    height: 40vw;
+    max-height: 275px;
+    border-radius: 10px;
+}
