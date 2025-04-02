@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 header {
-    background-image: url(/images/index/header.jpg);
+    background-image: url(images/index/header.jpg);
     background-position: center;
     background-size: cover;
 
@@ -68,13 +68,14 @@ header {
 
 .s1-header h2 {
     font-size: max(5vw, 30px);
+    margin-top: 1vw;
     height: 6vw;
     font-weight: 700;
     white-space: nowrap;
 }
 
 .s1-cards {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 80px 40px 80px;
 }
 
 .s1-fade-start {
@@ -90,7 +91,7 @@ header {
 }
 
 .s2 {
-    padding: 0px 0px 30px 0px;
+    padding: 100px 0px 130px 0px;
 }
 
 .s2-right {
@@ -106,12 +107,108 @@ header {
 
 .s2-slide {
     height: 100%;
-    padding: 30px 2vw;
+    padding: 30px 2vw 30px 2vw;
+}
+
+.s2-slide h3{
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .s2-slide-img {
     border: solid 2px;
-    height: 40vw;
-    max-height: 275px;
+    height: 275px;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.s2-slide-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.s2-slide-body {
+    padding: 0px 10px 0px 0px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.s3-main {
+    min-height: 600px;
+    margin: 0px 0px 0px 13vw;
+    
+    background-color: var(--color-font-white);
+    border: solid;
+    border-radius: 25px 0px 0px 25px;
+
+    padding: 30px !important;
+
+    overflow: hidden;
+}
+
+.s3-header {
+    margin: 20px 0px;
+}
+
+.s3-main h3 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.s3-main h6 {
+    font-size:25px;
+    font-weight: 500;
+}
+
+.s3-slideshow{
+    height: 30vw;
+    min-height: 300px;
+    max-height: 500px;
+    border:solid;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.s3-slideshow img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    position: relative;
+    top: -30px;
+}
+
+.s3-ss-l, .s3-ss-r {
+    display:inline-block;
+    margin: 0px max(2vw, 15px);
+
+    border:solid 1.5px;
+    border-radius: 1000px;
+    background-color: var(--colorfont-white);
+
+    height: 30px;
+    width: 30px;
+
+    text-align: center;
+    font-weight: 800;
+
+    z-index: 100;
+    transition: 0.4s ease-in-out;
+}
+
+.s3-ss-r { float:right; }
+
+.s3-ss-l:hover, .s3-ss-r:hover {
+    background-color: var(--color-highlight);
+    border-color: var(--color-highlight);
+    color: var(--color-font-white);
+}
+
+.s3-body {
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+
+    font-size: 20px;
 }
