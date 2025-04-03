@@ -95,7 +95,7 @@ nav li:hover {
     align-items: center;
 }
 
-.s-header-l, .s-header-r {
+.s-header-l, .s-header-r, .s-header-m{
 	height: 10vw;
 	padding: 30px 20px;
 
@@ -113,7 +113,7 @@ nav li:hover {
     margin-bottom: 100px;
 }
 
-.s-header-l h2, .s-header-r h2 {
+.s-header-l h2, .s-header-r h2, .s-header-m h2{
 	font-size: max(5vw, 30px);
 	filter: drop-shadow( 0px 0px 3.5px black );
 	font-weight: 700;
@@ -126,6 +126,12 @@ nav li:hover {
 	filter: drop-shadow( 5px 5px 5px black );
 }
 
+.s-header-m {
+    margin: 0px auto !important;
+    border-radius: 10px;
+    max-width: none;
+}
+
 footer {
     height:250px;
     background-color: var(--color-primary-1);
@@ -136,6 +142,7 @@ footer {
 .footer-credit {
     height:50px;
     background-color: var(--color-highlight);
+    white-space: nowrap;
 }
 
 .footer-credit h2 {
@@ -165,3 +172,5 @@ footer {
 }
 
 .extender {height: 200px;}
+
+.b-solid {border: solid;}

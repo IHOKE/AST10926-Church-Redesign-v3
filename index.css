@@ -132,6 +132,7 @@ header {
     padding: 0px 10px 0px 0px;
     text-align: justify;
     text-justify: inter-word;
+    font-size: 20px;
 }
 
 .s3-main {
@@ -207,8 +208,63 @@ header {
 
 .s3-body {
     height: 300px;
+    padding: 0px 10px 0px 0px;
     text-align: justify;
     text-justify: inter-word;
 
     font-size: 20px;
+}
+
+.s4 {
+    margin: 100px 0px;
+}
+
+.s4-card-main {
+    --s4-card-height: 700px;
+    height: var(--s4-card-height);
+}
+
+.s4-card, .s4-card-half {
+    --s4-card-margin: 30px;
+    margin: var(--s4-card-margin) !important;
+
+    border-radius: 25px;
+    background-color: var(--color-font-white);
+
+    overflow: hidden;
+}
+
+.s4-card {
+    height: var(--s4-card-height);
+    margin-right: 0px !important;
+}
+
+.s4-card-half {
+    height: calc(var(--s4-card-height) /2 - calc(var(--s4-card-margin) / 2) );
+    margin-left: 0px !important;
+}
+
+.s4-card img, .s4-card-half img {
+    height: calc(var(--s4-card-height) / 1.2975);
+    width: 100%;
+    object-fit: cover;
+    border-bottom: solid;
+}
+
+.s4-card-half img {
+    height: calc(var(--s4-card-height) / 4);
+}
+
+.s4-card h4, .s4-card-half h4 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.s4-card p, .s4-card-half p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.s4-card-body {
+    padding: 30px 0px;
 }
