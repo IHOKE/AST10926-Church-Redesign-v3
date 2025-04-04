@@ -151,7 +151,7 @@ footer {
 
 .footer-content { padding:00px 40px !important; }
 
-.footer-content-header h2, .footer-content-h { font-weight: 700; }
+.footer-content-header h2, .footer-content-h { font-size: 40px; font-weight: 700; }
 
 .footer-content-header {
     margin-top:20px !important;

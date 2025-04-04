@@ -1,26 +1,31 @@
 @charset "utf-8";
 
 .s1 {
-    margin: 80px 0px;
+	margin: 80px 0px;
 }
 
-  .calendar {
+/* start of Calendar */
+.calendar {
     margin: 60px 10% !important;
     width: 80% !important;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
 
-  .calendar-header {
-    height: 120px;
+	border-radius: 25px;
+}
+
+.calendar-header {
+    height: 160px;
+	padding: 0px 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     font-size: 30px;
-  }
+}
 
-  .calendar-header button {
+.calendar-header button {
 
     height: 50px;
     width: 50px;
@@ -34,50 +39,103 @@
     font-size: 1.5em;
     cursor: pointer;
 
-  }
+}
 
   .calendar-header button:hover {
     background-color: var(--color-highlight);
     border-color: var(--color-highlight);
     color: var(--color-font-white);
-  }
+}
 
-  #month-year {
+#month-year {
     font-size: 1.2em;
     font-weight: bold;
-  }
+}
 
-  .calendar-weekdays, .calendar-dates {
+.calendar-weekdays, .calendar-dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-  }
+}
 
-  .calendar-weekdays div, .calendar-dates div {
+.calendar-weekdays div, .calendar-dates div {
     text-align: center;
     padding: 10px;
-  }
+}
 
-  .calendar-weekdays {
+.calendar-weekdays {
     background-color: #eaeef3;
-  }
+}
 
-  .calendar-weekdays div {
+.calendar-weekdays div {
     font-weight: bold;
-  }
+}
 
-  .calendar-dates div {
+.calendar-dates div {
+	height: 60px;
     border-bottom: 1px solid #eaeef3;
     cursor: pointer;
-  }
+}
 
-  .calendar-dates div:hover {
+.calendar-dates div:hover {
     background-color: #f1f1f1;
-  }
+}
 
-  .current-date {
+.current-date {
     background-color: var(--color-highlight);
     color: var(--color-font-white);
     border-radius: 5px;
-  }
+}
   
-  
+/* End of Calendar */
+
+.s2 {
+	width: 80vw;
+	height: 750px;
+
+	background-color: var(--color-font-white);
+
+	border: solid var(--color-font-black);
+	border-radius: 25px 25px 0px 0px;
+	border-bottom: none;
+
+	margin: 0px auto;
+	padding: 30px 40px;
+}
+
+.s2 h2 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.s2 h6 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.s2-img {
+	height: 300px;
+	width: 90%;
+	margin: 30px auto;
+
+	border: solid;
+	border-radius: 20px;
+
+	overflow: hidden;
+}
+
+.s2-img img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.s2 p {
+	height: 220px;
+
+	font-size: 20px;
+	padding: 0px 10px 0px 0px;
+
+	text-align: justify;
+	text-justify: inter-word;
+	
+}

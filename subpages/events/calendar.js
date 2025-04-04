@@ -8,13 +8,13 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
 const months = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'
+  '1', '2', '3', '4', '5', '6',
+  '7', '8', '9', '10', '11', '12'
 ];
 
 function renderCalendar(month, year) {
     calendarDates.innerHTML = '';
-    monthYear.textContent = `${months[month]} ${year}`;
+    monthYear.textContent = `${year}年 - ${months[month]}月`;
   
     // Get the first day of the month
     const firstDay = new Date(year, month, 1).getDay();
