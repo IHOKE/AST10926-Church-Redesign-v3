@@ -4,8 +4,8 @@
     <head>
         <!-- Meta -->
         <meta charset="utf-8">
-        <title>聖公會主愛堂</title>
-        <link rel="icon" type="images/x-icon" href="images/common/favicon/ico">
+        <title>聖公會主愛堂 - 輪值表</title>
+        <link rel="icon" type="images/x-icon" href="../../images/common/emblem.ico">
         		
 		<!-- Preconnect to Google Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +26,19 @@
 
     <body class="body-main">
 
+
         <!-- GSAP -->
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 
 		<!-- BootStrap -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+		<!-- JSDelivr -->
+		<script src=" https://cdn.jsdelivr.net/npm/install@0.13.0/install.min.js "></script>
+
+		<!-- PDF Object -->
+		<script src="https://unpkg.com/pdfobject"></script>
+
 
         <!-- Start of NavBar -->
         <nav class="container-fluid" style="overflow: hidden;">
@@ -70,12 +74,59 @@
         </nav>
         <!-- End of NavBar -->
 
+		<section class="s1 container-fluid">
+			<div class="row s-header-m text-center"><h2 class="v-center" lang="zh-HK">輪值表</h2></div>
+			<div class="row">
+
+				<div class="col-5 g-0 pdf-nav">
+					<link href="../../components/scrollspy.css" rel="stylesheet">
+
+					<div class="scroll-spy-main col">
+	
+						<button class="scroll-spy-value" lang="zh-HK" style="border-top: solid;">
+							<h3>輪值表 1</h3>
+							<p>副標題 副標題</p>
+						</button>
+	
+						<button class="scroll-spy-value" lang="zh-HK">
+							<h3>輪值表 2</h3>
+							<p>副標題 副標題</p>
+						</button>
+	
+						<button class="scroll-spy-value" lang="zh-HK">
+							<h3>輪值表 3</h3>
+							<p>副標題 副標題</p>
+						</button>
+	
+						<button class="scroll-spy-value" lang="zh-HK">
+							<h3>輪值表 4</h3>
+							<p>副標題 副標題</p>
+						</button>
+	
+						<button class="scroll-spy-value" lang="zh-HK">
+							<h3>輪值表 5</h3>
+							<p>副標題 副標題</p>
+						</button>
+
+					</div>
+
+				</div>
+
+				<!-- PDF Viewer -->
+				<div class="col g-0">
+					<div class="pdf-viewport"></div>
+					<script>PDFObject.embed("sample.pdf", ".pdf-viewport");</script>
+				</div>
+
+			</div>
+		</section>
+
 		<div class="extender"></div>
 
 		<!-- End of Footer -->
 		<footer class="container-fluid">
 			<div class="row footer-credit">
-				<div class="col-12 text-center">
+				<div class="col-12">
 					<h2 class="v-center">Website presented by <b>Designation HKE</b> - Founded by <b>IHOKE</b></h2>
 				</div>
 			</div>
@@ -83,9 +134,9 @@
 			<div class="row"><div class="col-12 container-fluid footer-content">
 				<div class="row footer-content-header"><h2 lang="zh-HK">&#65339; 聖公會主愛堂 &#65341;</h2></div>
 				<div class="row footer-content-h text-end">
-					<div class="col">傳真</div>
-					<div class="col">電話號碼</div>
-					<div class="col">電郵</div>
+					<div class="col" lang="zh-HK">傳真</div>
+					<div class="col" lang="zh-HK">電話號碼</div>
+					<div class="col" lang="zh-HK">電郵</div>
 				</div>
 				<div class="row footer-content-p text-end">
 					<div class="col">1234-5678</div>

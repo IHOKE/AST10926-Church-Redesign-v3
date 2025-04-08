@@ -6,6 +6,7 @@ header {
     background-size: cover;
 
     height: 450px;
+    max-height: 450px !important;
 }
 
 .header-godray {
