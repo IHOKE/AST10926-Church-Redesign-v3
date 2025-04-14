@@ -69,7 +69,7 @@
         <!-- End of NavBar -->
 
 		<!-- Start of Banner -->
-		<header>		 </header>
+		<header><img src="../../images/index/header.jpg"></header>
 		<!-- End of Banner-->
 
 		<!-- Start of Section 1 -->
@@ -77,24 +77,24 @@
 			<div class="row s-header-m"><h2 class="text-center v-center" lang="zh-HK">圖片庫</h2></div>
 
 			<div class="row gallery-row g-0 s1-row1">
-				<div class="gallery-slide slide-row1 g-0"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row1 g-0" onclick="modalShow('#slide-modal' , 'images/church-1.jpg')" style="margin-left: 20px;"><img src="images/church-1.jpg"></div>
 				<div class="gallery-slide slide-row1 g-0"><img src="../../images/common/placeholder.svg"></div>
 				<div class="gallery-slide slide-row1 g-0"><img src="../../images/common/placeholder.svg"></div>
 				<div class="gallery-slide slide-row1 g-0"><img src="../../images/common/placeholder.svg"></div>
 			</div>
 
-			<div class="row gallery-row g-0 s1-row2">
-				<div class="gallery-slide-staggered slide-row2 g-0"><img src="../../images/common/placeholder.svg"></div>
-				<div class="gallery-slide-staggered slide-row2 g-0"><img src="../../images/common/placeholder.svg"></div>
-				<div class="gallery-slide-staggered slide-row2 g-0"><img src="../../images/common/placeholder.svg"></div>
-				<div class="gallery-slide-staggered slide-row2 g-0"><img src="../../images/common/placeholder.svg"></div>
+			<div class="row gallery-row-staggered g-0 s1-row2">
+				<div class="gallery-slide slide-row2 g-0" onclick="modalShow('#slide-modal' , '')" style="margin-left: 20px;"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row2 g-0" onclick="modalShow('#slide-modal' , '')"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row2 g-0" onclick="modalShow('#slide-modal' , '')"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row2 g-0" onclick="modalShow('#slide-modal' , 'images/church-2.jpg')"><img src="images/church-2.jpg"></div>
 			</div>
 
 			<div class="row gallery-row g-0 s1-row3">
-				<div class="gallery-slide slide-row3 g-0"><img src="../../images/common/placeholder.svg"></div>
-				<div class="gallery-slide slide-row3 g-0"><img src="../../images/common/placeholder.svg"></div>
-				<div class="gallery-slide slide-row3 g-0"><img src="../../images/common/placeholder.svg"></div>
-				<div class="gallery-slide slide-row3 g-0"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row3 g-0" onclick="modalShow('#slide-modal' , '')" style="margin-left: 20px;"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row3 g-0" onclick="modalShow('#slide-modal' , '')"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row3 g-0" onclick="modalShow('#slide-modal' , '')"><img src="../../images/common/placeholder.svg"></div>
+				<div class="gallery-slide slide-row3 g-0" onclick="modalShow('#slide-modal' , '')"><img src="../../images/common/placeholder.svg"></div>
 			</div>
 
 			<script src="../../scripts/loop-horizontal.js"></script>
@@ -121,7 +121,7 @@
 						</div>
 
 						<div class="modal-body">
-							<p>Put some Lorem Ipsum Here XDDDD</p>
+							<img class="modal-image" src="images/church-1.jpg" alt="No Images here">
 						</div>
 
 						<div class="modal-footer">
@@ -133,17 +133,14 @@
 			</div>
 
 			<script>
-				function modalShow(modal) {
+				function modalShow(modal, image) {
 					$(modal).modal('show')
+					$(".modal-image").attr("src", image);
 				}
 
 				function modalHide(modal) {
 					$(modal).modal('hide')
 				}
-
-				document.addEventListener("DOMContentLoaded", (event) => {
-					modalShow('#slide-modal')
-				});
 			</script>
 
 		</section>

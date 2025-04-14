@@ -99,10 +99,6 @@ header {
     height: 20vw;
     max-height: 180px;
     width: 100%;
-
-    background-image: url(../../images/index/header.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .s-header-l, .s-header-r, .s-header-m{

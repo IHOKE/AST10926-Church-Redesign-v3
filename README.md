@@ -22,6 +22,11 @@
 <p>Someone write the fucking readme.md<br>The patch notes especially</p>
 
 <h2>PATCH NOTES</h2>
+
+<h3>v3.6 gallery.html</h3>
+<p>Finished Galery</p>
+<p>Fitted JS to when a photo is clicked, a corresponding modal is shown</p>
+
 <h3>v3.4 events.html</h3>
 <p>The calendar is officially <b>DONE!</b>, so is the details section 2</p>
 <p>Not the JS part of the details ofc</p>
