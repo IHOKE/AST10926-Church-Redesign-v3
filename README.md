@@ -7,9 +7,9 @@
 	<tr><td>Name</td><td>Name (short)</td><td>SID</td></tr>
 	<tr><td>Hermina Tealie</td><td>Hermina</td><td>H10007813</td></tr>
 	<tr><td>Lau Ying Wai</td><td>Modo</td><td>H10007903</td></tr>
-	<tr><td>Name here</td><td>Marco</td><td>SID here</td></tr>
-	<tr><td>Name here</td><td>Charles</td><td>SID here</td></tr>
-	<tr><td>Name here</td><td>Tina</td><td>SID here</td></tr>
+	<tr><td>Chung Ming Kwan</td><td>Marco</td><td>H10007949</td></tr>
+	<tr><td>Wang Wing Shing</td><td>Charles</td><td>H10007894</td></tr>
+	<tr><td>Hon Tsz Shan</td><td>Tina</td><td>H10007816</td></tr>
 </table>
 
 <h3>To Do List</h3>
