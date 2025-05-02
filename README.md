@@ -16,12 +16,16 @@
 <table>
 	<tr><td>Item</td><td>Task</td><td>Member</td></tr>
 	<tr><td>1</td><td>Implement JS on slideshows, calendar and news alike</td><td>Modo</td></tr>
-		<tr><td>2</td><td>duty.html, sermons.html, gallery.html, contact.html</td><td>Hermina</td></tr>
+	<tr><td>2</td><td>duty.html, sermons.html, gallery.html, contact.html</td><td>Hermina</td></tr>
 </table>
 
 <p>Someone write the fucking readme.md<br>The patch notes especially</p>
 
 <h2>PATCH NOTES</h2>
+
+<h3>v3.7 Home Page - Section 5 - Sub Navbar</h3>
+<p>Felt weird about having the subtitle to offer help and having no help to offer</p>
+<p>So this section 5 is the "help" yknow</p>
 
 <h3>v3.6 gallery.html</h3>
 <p>Finished Galery</p>
