@@ -49,7 +49,6 @@
 		<!-- GSAP -->
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 
@@ -144,15 +143,15 @@
 			<div class="container-fluid g-0 h-full">
 				<div class="row h-full v-center g-0" style="padding: 10px 0;">
 					<div class="col b-horizontal">
-						<a href="#news"><div class="v-center font-hk">最新資訊</div></a>
+						<a href="#news"><div class="v-center" lang="zh-HK">最新資訊</div></a>
 					</div>
 					
 					<div class="col">
-						<a href="#committee"><div class="v-center font-hk">我們的同工架構</div></a>
+						<a href="#committee"><div class="v-center" lang="zh-HK">我們的同工架構</div></a>
 					</div>
 					
 					<div class="col b-horizontal">
-						<a href="#about"><div class="v-center font-hk">關於我們</div></a>
+						<a href="#about"><div class="v-center" lang="zh-HK">關於我們</div></a>
 					</div>
 				</div>
 			</div>
@@ -160,31 +159,35 @@
 		<!-- End of Section 5 -->
 
 		<!-- Start of Section 1 - Pages -->
-		<section class="s1 container-fluid">
+		<section class="s1 container-fluid g-0">
 			
-			<div class="s1-fade-start row"></div>
-			<link href="components/card.css" rel="stylesheet">
-
-			<div class="row s1-header text-center">
-				<h2 lang="zh-HK">聖公會其他網站</h2>
+			<div class="row g-0"><div class="col g-0">
+				<div class="s1-fade-start"></div>
+			</div></div>
+			
+			<div class="row s1-header text-center g-0">
+				<div class="col g-0 h-full">
+					<h2 lang="zh-HK" class="">聖公會其他網站</h2>
+				</div>
 			</div>
 			
-			<div class="row s1-cards">
-				<a class="card col" href="https://www.hkskh.org/">
+			<link href="components/card.css" rel="stylesheet">
+			<div class="row s1-cards g-0">
+				<a class="card col g-0" href="https://www.hkskh.org/">
 					<div class="card-content h-center">
 						<div class="card-img"><img src="images/common/placeholder.svg" class="h-center"></div>
 						<h2 class="card-body" lang="zh-HK">聖公會</h2>
 					</div>
 				</a>
 
-				<a class="card col" href="https://www.hkskh.org/">
+				<a class="card col g-0" href="https://www.hkskh.org/">
 					<div class="card-content h-center">
 						<div class="card-img"><img src="images/common/placeholder.svg" class="h-center"></div>
 						<h2 class="card-body" lang="zh-HK">聖公會</h2>
 					</div>
 				</a>
 
-				<a class="card col" href="https://www.hkskh.org/">
+				<a class="card col g-0" href="https://www.hkskh.org/">
 					<div class="card-content h-center">
 						<div class="card-img"><img src="images/common/placeholder.svg" class="h-center"></div>
 						<h2 class="card-body" lang="zh-HK">聖公會</h2>
@@ -197,13 +200,17 @@
 		<!-- End of Section 1 -->
 
 		<!-- Start of Section 2 - News-->
-		<section class="s2 container-fluid" id="news">
-			<div class="row s-header-l"><h2 class="v-center" lang="zh-HK">最新資訊</h2></div>
+		<section class="s2 container-fluid g-0" id="news">
 
-			<div class="row">
+			<div class="row g-0"><div class="col g-0">
+				<div class="s-header-l"><h2 class="v-center" lang="zh-HK">最新資訊</h2></div>
+			</div></div>
+
+			<div class="row g-0">
+				<div class="s2-left"></div>
 
 				<link href="components/scrollspy.css" rel="stylesheet">
-				<div class="scroll-spy-main col">
+				<div class="scroll-spy-main col g-0">
 
 					<button class="scroll-spy-value" lang="zh-HK" style="border-top: solid;">
 						<h3>頭條 1</h3>
@@ -242,34 +249,39 @@
 					</div>
 				</div>
 
-				<div class="col-1"></div>
-
 			</div>
 		</section>
 		<!-- End of Section 2 -->
 
 		<!-- Start of Section 3 -->
-		<section class="container-fluid" id="about">
-			<div class="row s-header-r"><h2 class="v-center" lang="zh-HK">關於我們</h2></div>
+		<section class="container-fluid g-0" id="about">
 
-			<div class="row">
+			<div class="row g-0"><div class="col g-0">
+				<div class="s-header-r"><h2 class="v-center" lang="zh-HK">關於我們</h2></div>
+			</div></div>
 
-				<div class="col-1"></div>
+			<div class="row g-0">
 
-				<div class="s3-main col">
-					<div class="s3-slideshow">
-						<button class="s3-ss-l v-center" lang="zh-HK">&#60;</button>
-						<button class="s3-ss-r v-center"lang="zh-HK">&#62;</button>
-						<img src="images/common/placeholder.svg">
-					</div>
-					<div class="s3-header">
-						<h3 lang="zh-HK">聯絡我們</h3>
-						<h6 lang="zh-HK">副標題</h6>
-					</div>
-					<div class="s3-body overflow-y" lang="zh-HK">
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-						<br><br>
-						It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				<div class=" col g-0">
+					<div class="s3-main" style="padding-right: 10vw !important;">
+
+						<div class="s3-slideshow">
+							<button class="s3-ss-l v-center" lang="zh-HK">&#60;</button>
+							<button class="s3-ss-r v-center"lang="zh-HK">&#62;</button>
+							<img src="images/common/placeholder.svg">
+						</div>
+
+						<div class="s3-header">
+							<h3 lang="zh-HK">聯絡我們</h3>
+							<h6 lang="zh-HK">副標題</h6>
+						</div>
+
+						<div class="s3-body overflow-y" lang="zh-HK">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							<br><br>
+							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -277,17 +289,19 @@
 		<!-- End of Section 3 -->
 
 		<!-- Start of Section 4 -->
-		<section class="s4 container-fluid" id="committee">
-			<div class="row s-header-m" style="width: max( 70vw , 300px ) !important;">
+		<section class="s4 container-fluid g-0" id="committee">
+			<div class="row g-0 s-header-m" style="width: max( 70vw , 300px ) !important;">
 				<h2 class="v-center text-center" lang="zh-HK">
 					我們的同工架構
 				</h2>
 			</div>
 
-			<div class="row s4-card-main" style="margin-top: 75px;">
-				<div class="col">
-					<div class="container-fluid">
-						<div class="row b-solid s4-card g-0 text-center"><div class="col">
+			<div class="row s4-card-main g-0" style="margin-top: 75px;">
+
+				<!-- Left Card -->
+				<div class="col g-0">
+					<div class="container-fluid g-0">
+						<div class="row b-solid s4-card g-0 text-center g-0"><div class="col g-0">
 						
 							<img src="images/common/placeholder.svg">
 							<div class="s4-card-body">
@@ -299,10 +313,11 @@
 					</div>
 				</div>
 
-				<div class="col">
-					<div class="container-fluid">
+				<!-- Right Cards -->
+				<div class="col g-0">
+					<div class="container-fluid g-0">
 
-						<div class="row b-solid s4-card-half g-0 text-center"><div class="col">
+						<div class="row b-solid s4-card-half g-0 text-center"><div class="col g-0">
 							
 							<img src="images/common/placeholder.svg">
 							<div class="s4-card-body">
@@ -312,7 +327,7 @@
 
 						</div></div>
 
-						<div class="row b-solid s4-card-half g-0 text-center"><div class="col">
+						<div class="row b-solid s4-card-half g-0 text-center"><div class="col g-0">
 
 							<img src="images/common/placeholder.svg">
 							<div class="s4-card-body">
@@ -338,14 +353,17 @@
 				</div>
 			</div>
 
-			<div class="row"><div class="col-12 container-fluid footer-content">
-				<div class="row footer-content-header"><h2 lang="zh-HK">&#65339; 聖公會主愛堂 &#65341;</h2></div>
-				<div class="row footer-content-h text-end">
+			<div class="row g-0"><div class="col-12 g-0 container-fluid footer-content">
+
+				<div class="row g-0 footer-content-header"><h2 lang="zh-HK">&#65339; 聖公會主愛堂 &#65341;</h2></div>
+
+				<div class="row g-0 footer-content-h text-end">
 					<div class="col" lang="zh-HK">傳真</div>
 					<div class="col" lang="zh-HK">電話號碼</div>
 					<div class="col" lang="zh-HK">電郵</div>
 				</div>
-				<div class="row footer-content-p text-end">
+
+				<div class="row g-0 footer-content-p text-end">
 					<div class="col">1234-5678</div>
 					<div class="col">1234-5678</div>
 					<div class="col">Church@mail.com</div>

@@ -66,14 +66,11 @@ header {
 .s1-header {
     color: white;
     background-color: var(--color-primary-1);
-    padding:10px;
-    min-height: 58px;
+    padding: max(1vw, 15px);
 }
 
 .s1-header h2 {
-    font-size: max(5vw, 30px);
-    margin-top: 1vw;
-    height: 6vw;
+    font-size: clamp( 40px, 5vw, 80px);
     font-weight: 700;
     white-space: nowrap;
 }
@@ -97,7 +94,14 @@ header {
 
 /* Start of Section 2 */
 .s2 {
-    padding: 100px 0px 130px 0px;
+    padding: 100px 0px 130px 0px !important;
+}
+
+.s2-left {
+    width: 10vw !important;
+    background-color: var(--color-font-white);
+    border-top: var(--color-font-black) solid;
+    border-bottom: var(--color-font-black) solid;
 }
 
 .s2-right {
@@ -108,7 +112,7 @@ header {
 
     border: solid;
     border-radius: 0px 25px 25px 0px;
-    margin: 0px 15vw 0px 0px;
+    margin: 0px 20vw 0px 0px;
 }
 
 .s2-slide {
@@ -145,10 +149,11 @@ header {
 /* Start of Section 3 */
 .s3-main {
     min-height: 600px;
-    margin: 0px 0px 0px 13vw;
+    margin: 0px 0px 0px 20vw;
     
     background-color: var(--color-font-white);
     border: solid;
+    border-right: none;
     border-radius: 25px 0px 0px 25px;
 
     padding: 30px !important;
@@ -246,12 +251,14 @@ header {
 
 .s4-card {
     height: var(--s4-card-height);
-    margin-right: 0px !important;
+    margin-right: 3vw !important;
+    margin-left: 10vw !important;
 }
 
 .s4-card-half {
     height: calc(var(--s4-card-height) /2 - calc(var(--s4-card-margin) / 2) );
-    margin-left: 0px !important;
+    margin-right: 10vw !important;
+    margin-left: 3vw !important;
 }
 
 .s4-card img, .s4-card-half img {
@@ -290,7 +297,7 @@ header {
 .s5 .col{
     color:var(--color-font-white);
     text-align: center;
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
 }
 
 .s5 .col a{
@@ -298,7 +305,7 @@ header {
     color:var(--color-font-white);
     font-size: 25px;
     font-weight: 600;
-    transition-duration: 0.1s;
+    transition-duration: 0.3s;
 }
 
 .s5 .col:hover{

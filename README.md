@@ -2,6 +2,7 @@
 <h6>A rebuild of a rebuild of a redesign of a website (wow)</h6>
 <p>This repo is a complete <b>redesign and rebuild</b> of the <a href="https://github.com/IHOKE/AST10926-Church-Website-Redesign">previous redesign and rebuild</a> from scratch.</p>
 <hr>
+<h4>I deadass want to rebuild this project again (skull emoji)</h4>
 
 <table>
 	<tr><td>Name</td><td>Name (short)</td><td>SID</td></tr>
@@ -23,6 +24,12 @@
 
 <h2>PATCH NOTES</h2>
 
+<h3>v3.8 Fixing Spacings</h3>
+<p>I am currently suffering from insomnia</p>
+<p>Fixed most spacings in index to fit for 16:9 screens</p>
+<p>Gave 10vw padding to all sections</p>
+<p>Footer is now a bit more resillant to resizing</p>
+
 <h3>v3.7 Home Page - Section 5 - Sub Navbar</h3>
 <p>Felt weird about having the subtitle to offer help and having no help to offer</p>
 <p>So this section 5 is the "help" yknow</p>
@@ -42,7 +49,8 @@
 
 <h3>v3.2</h3>
 <p>Stole some css animations from here and there, mostly from UIverse</p>
-<p>This includes the Facebook button, Scrollspy but not Bootstrap, and cards</p>
+<p>UIverse is <b>GOATED</b></p>
+<p>This includes the Facebook button, Scrollspy (not Bootstrap), and cards</p>
 
 <h3>v3.0</h3>
 <p>Implemented Bootstrap into the project, thus requiring this rebuild</p>
