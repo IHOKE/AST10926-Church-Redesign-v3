@@ -30,6 +30,7 @@
 <p>Replaced by Navbar v2 which uses flex and features a sidebar</p>
 <p>There is also a cool fancy blur effect when the sidebar is up</p>
 <p>Also fixed a little bit spacing of index.html section 5</p>
+<p>v.3.9.1 Minor fix - fixed a not covering the li in .nav-flex</p>
 
 <h3>v3.8 Fixing Spacings</h3>
 <p>I am currently suffering from insomnia</p>

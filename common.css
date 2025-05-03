@@ -124,7 +124,7 @@ footer {
 	background-color: var(--color-primary-1);
 	z-index: 1000;
 	color: var(--color-font-white);
-	overflow-y: hidden;
+	overflow: hidden;
 }
 
 .nav-flex ul{
@@ -139,10 +139,11 @@ footer {
 }
 
 .nav-flex li{
-	padding: 15px 20px;
 	transition-duration: 0.25s;
 	border-radius: 5px;
 	a{
+		display: block;
+		padding: 15px 20px;
 		text-decoration: none;
 		color: var(--color-font-white);
 		height: 100%;
@@ -185,6 +186,9 @@ footer {
 	@media (max-width: 660px) {
 		display: none;
 	}
+}
+.nav-flex li:nth-last-child(2){
+	margin-right: 15px;
 }
 
 .nav-side-bg{
