@@ -85,6 +85,15 @@
     color: var(--color-font-white);
     border-radius: 5px;
 }
+
+.event-date {
+    background-color: #d1e7dd; /* Light green background for event days */
+    border-radius: 5px;
+}
+
+.event-date:hover {
+    background-color: #c3e6cb; /* Slightly darker green on hover */
+}
   
 /* End of Calendar */
 
