@@ -24,6 +24,13 @@
 
 <h2>PATCH NOTES</h2>
 
+<h3>v3.9 NavBar v2</h3>
+<p>Day following insomnia (wow)</p>
+<p>Original Navbar v1 depreciated, moved the HTML & CSS Source codes into components/nav-v1.css</p>
+<p>Replaced by Navbar v2 which uses flex and features a sidebar</p>
+<p>There is also a cool fancy blur effect when the sidebar is up</p>
+<p>Also fixed a little bit spacing of index.html section 5</p>
+
 <h3>v3.8 Fixing Spacings</h3>
 <p>I am currently suffering from insomnia</p>
 <p>Fixed most spacings in index to fit for 16:9 screens</p>

@@ -289,8 +289,8 @@ header {
 
 /* Start of Section 5 */
 .s5{
-    height: 70px;
-    padding: 0 max(12vw, 60px) !important;
+    display: flex;
+    padding: 15px max(12vw, 60px) !important;
     background-color: var(--color-highlight);
 }
 
@@ -298,12 +298,14 @@ header {
     color:var(--color-font-white);
     text-align: center;
     transition-duration: 0.3s;
+    padding: 5px 0px;
 }
 
 .s5 .col a{
     text-decoration: none;
     color:var(--color-font-white);
-    font-size: 25px;
+    font-size: clamp(20px, 3vw, 30px);
+    white-space: nowrap;
     font-weight: 600;
     transition-duration: 0.3s;
 }
