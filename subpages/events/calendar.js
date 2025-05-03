@@ -14,24 +14,27 @@ const months = [
 
 // Define your events
 const events = {
-  '5-20-2025': { 
-      title: 'Event 1', 
-      date: '2023-05-01', 
-      description: 'Description for Event 1',
-      image: '../../images/events/event1.jpg' // Add the image URL
-  },
-  '5-9-2025': { 
-      title: 'Event 2', 
-      date: '2023-05-15', 
-      description: 'Description for Event 2',
-      image: '../../images/events/event2.jpg' // Add the image URL
-  },
-  '5-3-2025': { 
-      title: 'Special Event', 
-      date: '2025-05-03', 
-      description: 'Description for the special event on May 3, 2025.',
-      image: '../../images/events/event3.jpg' // Add the image URL
-  },
+    '5-10-2025': {
+        title: '香港聖公會西九龍教區婦女團主辦 走訪《麥理浩夫人中心》',
+        date: '2025-05-10',
+        description: '西九龍教區婦女團本屆主題為《跨代手牽手•侍主肩並肩》！希望籍著不同活動，走到教區教省各處，認識聖公會的三頭馬車，怎樣將上帝的愛傳給每一個人！並透過團契活動，讓我們與不同年齡層的弟兄姊妹相知、相交，彰顯主基督的愛。',
+        image: 'images/HKSKH Lady MacLehose Centre.png' // Add the image URL
+    },
+
+    '5-11-2025': {
+        title: '母親節感恩慶典',
+        date: '2025-05-11',
+        description: '在這個特別的母親節，香港聖公會主愛堂誠邀您參加「母親節感恩慶典」。我們將一起慶祝母親們的無私奉獻與愛。活動中將有感人的演講、親子互動遊戲以及手作卡片環節，讓每位參加者能夠為自己的母親送上真摯的祝福和感謝。歡迎大家攜家帶眷，共同度過這個充滿愛的午後！',
+        image: 'images/motherDay.jpg' // Add the image URL
+    },
+
+    '5-20-2025': {
+        title: '社區聯歡日',
+        date: '2025-05-20',
+        description: '香港聖公會主愛堂誠邀您參加「社區聯歡日」。這是一個旨在促進社區聯繫與友誼的活動，適合所有年齡層的家庭參加。活動內容包括音樂表演、遊戲攤位、美食市集、手作工作坊等，讓大家在輕鬆愉快的氛圍中互相認識和交流。無論是想要享受音樂、品嚐美食，還是參加有趣的活動，這裡都能找到適合您的選擇。歡迎攜家帶眷，共度美好的一天！',
+        image: 'images/socialGathering.jpg' // Add the image URL
+    },
+
   // Add more events as needed
 };
 
