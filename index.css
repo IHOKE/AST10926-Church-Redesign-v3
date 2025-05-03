@@ -188,9 +188,13 @@ header {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
+    display: none;
     position: relative;
     top: -30px;
+}
+
+.s3-slideshow img.active {
+    display: block; /* Show the active image */
 }
 
 .s3-ss-l, .s3-ss-r {

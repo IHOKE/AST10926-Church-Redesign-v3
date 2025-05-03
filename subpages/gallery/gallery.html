@@ -19,6 +19,25 @@
 		<link href="../../common.css" rel="stylesheet">
 		<link href="gallery.css" rel="stylesheet">
 
+		<!--Scroll To Top-->
+		<script>
+			function scrollToTop() {
+				window.scrollTo({
+				top: 0,
+				behavior: 'smooth' // Smooth scroll
+				});
+			}
+			
+			// Show button when scrolling down
+			window.onscroll = function() {
+				const button = document.getElementById('scrollToTop');
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				button.style.display = 'block'; // Show button
+				} else {
+				button.style.display = 'none'; // Hide button
+				}
+			};
+		</script>
 	</head>
 
 	<body class="body-main">
@@ -192,32 +211,60 @@
 
 		<div class="extender"></div>
 
-		<!-- End of Footer -->
-		<footer class="container-fluid">
-			<div class="row footer-credit">
-				<div class="col-12 text-center">
-					<h2 class="v-center">Website presented by <b>Designation HKE</b> - Founded by <b>IHOKE</b></h2>
-				</div>
+		<div class="row footer-credit">
+			<div class="col-12 text-center">
+				<h2 class="v-center">Website presented by <b>Designation HKE</b> - Founded by <b>IHOKE</b></h2>
 			</div>
-
-			<div class="row g-0"><div class="col-12 g-0 container-fluid footer-content">
-
-				<div class="row g-0 footer-content-header"><h2 lang="zh-HK">&#65339; 聖公會主愛堂 &#65341;</h2></div>
-
-				<div class="row g-0 footer-content-h text-end">
-					<div class="col" lang="zh-HK">傳真</div>
-					<div class="col" lang="zh-HK">電話號碼</div>
-					<div class="col" lang="zh-HK">電郵</div>
+			</div>
+			
+			<!-- Start of Footer -->
+			<footer>
+			<div class="row fot-row">
+			  <div class="col-4 fot-col">
+				<div class="logo-container">
+				  <img src="../../images/common/emblem.svg" alt="Logo" class="logo">
+				  <h6>聖公會主愛堂</h6>
 				</div>
-
-				<div class="row g-0 footer-content-p text-end">
-					<div class="col">1234-5678</div>
-					<div class="col">1234-5678</div>
-					<div class="col">Church@mail.com</div>
-				</div>
-			</div></div>
-		</footer>
-		<!-- End of Footer -->
+				<p>聖公會主愛堂隸屬於聖公會，致力於宣揚基督的教導和服務社區。主愛堂通常會舉行各種宗教活動、崇拜和社區服務，並且為信徒提供靈性上的支持。教堂的設計往往融合了傳統與現代的元素，提供一個靜謐的環境供人靈修和反思。</p>
+			  </div>
+			
+			  <div class="col fot-col">
+				<h3>地址<div class="line"><span></span></div> </h3>
+				<a href="https://maps.app.goo.gl/H6TnAkTS7bFM9z5c6">
+				  <p>聖公會主愛小學</p>
+				  <p>童子街45號,石蔭,葵涌,新界</p>
+				</a>
+				<p class="email"><a href="mailto:divinelovehk@yahoo.com.hk">divinelovehk@yahoo.com.hk</a></p>
+				<h4>+852 2420 5528</h4>
+			  </div>
+			
+			  <div class="col fot-col">
+				<h3>連結<div class="line"><span></span></div></h3>
+				<ul>
+				  <li><a href="../../index.html">首頁</a></li>
+				  <li><a href="../events/events.html">活動</a></li>
+				  <li><a href="../duty/duty.html">輪值表</a></li>
+				  <li><a href="../sermons/sermons.html">過往講道</a></li>
+				  <li><a href="gallery.html">圖片庫</a></li>
+				  <li><a href="../contact/contact.html">聯絡我們</a></li>
+				</ul>
+			  </div>
+			
+			  <div class="col fot-col">
+				<h3>通訊<div class="line"><span></span></div></h3>
+				<form>
+				  <div class="inputBox">
+					<input type="email" required>
+					<span>Enter your email</span>
+				  </div>
+				  <input class="btn btn-primary sub-btn" type="submit" value="Submit">
+				</form>
+			
+			  </div>
+			</div>
+			</footer>
+			<!-- End of Footer -->
+			<button id="scrollToTop" onclick="scrollToTop()" style="display: none;">↑</button>
 	</body>
 
 </html>
