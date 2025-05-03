@@ -41,6 +41,8 @@
 				}
 			};
 		</script>
+
+		<script src="duty.js"></script>
 	</head>
 
 	<body class="body-main">
@@ -146,33 +148,31 @@
 				<div class="col-5 g-0 pdf-nav" >
 					<link href="../../components/scrollspy.css" rel="stylesheet">
 
-					<div class="scroll-spy-main col" >
-	
-						<button class="scroll-spy-value" lang="zh-HK" style="border-top: solid;">
+					<div class="scroll-spy-main col">
+						<button class="scroll-spy-value" data-pdf="2021-04-27.pdf" lang="zh-HK" style="border-top: solid;">
 							<h3>輪值表 1</h3>
 							<p>副標題 副標題</p>
 						</button>
-	
-						<button class="scroll-spy-value" lang="zh-HK">
+		
+						<button class="scroll-spy-value" data-pdf="2019-09-27.pdf" lang="zh-HK">
 							<h3>輪值表 2</h3>
 							<p>副標題 副標題</p>
 						</button>
-	
-						<button class="scroll-spy-value" lang="zh-HK">
+		
+						<button class="scroll-spy-value" data-pdf="2019-08-23.pdf" lang="zh-HK">
 							<h3>輪值表 3</h3>
 							<p>副標題 副標題</p>
 						</button>
-	
-						<button class="scroll-spy-value" lang="zh-HK">
+		
+						<button class="scroll-spy-value" data-pdf="2019-07-30.pdf" lang="zh-HK">
 							<h3>輪值表 4</h3>
 							<p>副標題 副標題</p>
 						</button>
-	
-						<button class="scroll-spy-value" lang="zh-HK">
+		
+						<button class="scroll-spy-value" data-pdf="2019-06-26.pdf" lang="zh-HK">
 							<h3>輪值表 5</h3>
 							<p>副標題 副標題</p>
 						</button>
-
 					</div>
 
 				</div>
@@ -180,10 +180,24 @@
 				<!-- PDF Viewer -->
 				<div class="col g-0">
 					<div class="pdf-viewport"></div>
-					<script>PDFObject.embed("sample.pdf", ".pdf-viewport");</script>
+					<script>PDFObject.embed("2021-04-27.pdf", ".pdf-viewport");</script>
 				</div>
 
 			</div>
+			<script>
+			// Function to embed PDF
+				function embedPDF(pdfFile) {
+					PDFObject.embed(pdfFile, ".pdf-viewport");
+				}
+
+			// Event listener for buttons
+				document.querySelectorAll('.scroll-spy-value').forEach(button => {
+					button.addEventListener('click', function() {
+						const pdfFile = this.getAttribute('data-pdf'); // Get the PDF file from data attribute
+						embedPDF(pdfFile); // Call the function to embed the PDF
+					});
+				});
+			</script>
 		</section>
 
 		<div class="extender"></div>
