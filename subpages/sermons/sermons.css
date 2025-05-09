@@ -1,1 +1,45 @@
 @charset "utf-8";
+body {
+	--pdf-height: 800px;
+	--s1-gutter: min(8vw, 100px);
+}
+
+.s1 {
+	width: 100% !important;
+}
+
+.s-header-m {
+	margin: 80px auto !important;
+}
+
+.video-nav {
+	max-width: 250px !important;
+	margin-right: calc(var(--s1-gutter)/2);
+
+	border: solid;
+	border-radius: 0px 15px 15px 0px;
+	border-left: none;
+
+	background-color: var(--color-font-white);
+}
+
+.scroll-spy-main {
+	margin: auto;
+	height: 100% !important;
+	padding: 0px !important;
+	border: none !important;
+}
+
+.scroll-spy-main button{
+	height: 140px;
+	width: auto;
+	padding: 10px 0px 0px 20px;
+}
+
+.scroll-spy-main button h3{
+	font-size: 30px;
+}
+
+.scroll-spy-main button p{
+	font-size: 20px;
+}
