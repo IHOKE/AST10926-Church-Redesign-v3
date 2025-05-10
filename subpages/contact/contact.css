@@ -220,6 +220,7 @@
 }
 
 .googleMap{
+    border-radius: 15px;
     z-index: 1000;
     height: 300px;
     width: 500px;
