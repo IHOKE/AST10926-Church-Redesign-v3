@@ -24,6 +24,19 @@
 
 <h2>PATCH NOTES</h2>
 
+<h3>v4.0 contact.html & sermons.html</h3>
+<p>Finished contact.html and sermons.html</p>
+<p>Added the banner in contact.html and fixed the CSS</p>
+
+<h3>v3.9.2 footer and JavaScript</h3>
+<p>Finished footer redesign</p>
+<p>Added JavaScript code to the calendar functionality</p>
+<p>Added JavaScript code and a PDF file to the duty page</p>
+<p>Added an image to the index, events, gallery page</p>
+<p>Fixed the text content on the duty page</p>
+<p>Fixed the images and text content in the gallery</p>
+
+
 <h3>v3.9 NavBar v2</h3>
 <p>Day following insomnia (wow)</p>
 <p>Original Navbar v1 depreciated, moved the HTML & CSS Source codes into components/nav-v1.css</p>
