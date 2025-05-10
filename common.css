@@ -30,49 +30,51 @@ header {
 }
 
 /* Start of Section Headers */
-.s-header-l, .s-header-r, .s-header-m{
-	height: 10vw;
-	min-height: 100px;
-	max-height: 150px;
+.s-header-c{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	padding: 10vh 0;
 
-	color: var(--color-font-white);
-	background-color: var(--color-primary-1);
+	.s-header-l, .s-header-r, .s-header-m{
+		width: 60%;
+		padding: 2vh 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100px;
+		max-height: 150px;
+		color: var(--color-font-white);
+		background-color: var(--color-primary-1);
+	}
+	
+	.s-header-l{
+		align-self: start;
+		align-items: start;
+		border-radius: 0px 10px 10px 0px;
+		filter: drop-shadow( -5px 5px 5px var(--color-shadow) );
+		padding-left: 10vw;
+	}
 
-	border-radius: 0px 10px 10px 0px;
-	filter: drop-shadow( -5px 5px 5px black );
+	.s-header-m{
+		align-self: center;
+		align-items: center;
+		border-radius: 10px 10px 10px 10px;
+		filter: drop-shadow( 0 5px 5px var(--color-shadow) );
+	}
 
-	margin-bottom: 100px;
+	.s-header-r{
+		align-self: end;
+		align-items: end;
+		border-radius: 10px 0px 0px 10px;
+		filter: drop-shadow( 5px 5px 5px var(--color-shadow) );
+		padding-right: 10vw;
+	}
 }
 
 .s-header-l h2, .s-header-r h2, .s-header-m h2{
 	font-size: clamp(50px, 5vw, 80px);
-	height: 66%;
-	filter: drop-shadow( 0px 0px 3.5px black );
 	font-weight: 700;
-}
-
-.s-header-l {
-	margin-right: 30vw !important;
-	h2 {left: 10vw;}
-}
-
-.s-header-r {
-	text-align: right;
-	margin-left: 30vw !important;
-	border-radius: 10px 0px 0px 10px;
-	filter: drop-shadow( 5px 5px 5px black );
-	h2 {right: 10vw;}
-}
-
-.s-header-m{
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 10vw;
-	border-radius: 10px;
-	max-width: none;
-	filter: drop-shadow( 0px 5px 5px black );
 }
 /* End of Section Headers */
 
@@ -447,7 +449,7 @@ input::placeholder{
 
 .h-full{ height: 100%; }
 
-.b-solid {border: solid;}
+.b-solid {border: solid !important;}
 
 .b-horizontal {border-right: solid; border-left: solid;}
 

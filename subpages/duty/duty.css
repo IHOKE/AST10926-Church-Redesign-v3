@@ -9,10 +9,6 @@ body {
 	width: 100% !important;
 }
 
-.s-header-m {
-	margin: 80px auto !important;
-}
-
 .pdf-nav {
 	height: var(--pdf-height);
 	max-width: 250px !important;

@@ -13,10 +13,6 @@ header img {
     overflow: hidden;
 }
 
-.s-header-m {
-    margin: 80px auto !important;
-}
-
 .gallery-row, .gallery-row-staggered {
     height: 30vw;
     max-height: 350px;
