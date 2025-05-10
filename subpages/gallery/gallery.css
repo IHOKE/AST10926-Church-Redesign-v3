@@ -13,17 +13,14 @@ header img {
     overflow: hidden;
 }
 
-.s-header-m {
-    margin: 80px auto !important;
-}
-
 .gallery-row, .gallery-row-staggered {
-    height: 40vw;
+    height: 30vw;
     max-height: 350px;
     width: 100%;
     overflow: hidden;
     padding: 20px 0px;
     flex-wrap: nowrap !important;
+    filter: drop-shadow( 0 0 5px var(--color-shadow));
 }
 
 .gallery-row-staggered {
@@ -35,14 +32,11 @@ header img {
 .gallery-slide, .gallery-slide-staggered {
     --slide-width: 40vw;
     --slide-margin: 2vw;
-
     height: 100%;
     width: var(--slide-width) !important;
     max-width: 400px;
     margin: var(--slide-margin);
-    
     overflow: hidden;
-    border: solid;
     border-radius: 15px;
 }
 

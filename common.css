@@ -7,6 +7,7 @@
 	--color-accent: #780000;
 	--color-white:#FDF0D5;
 	--color-highlight:#C1121F;
+	--color-shadow: gray;
 
 	--color-font-white:#ffffff;
 	--color-font-black:#000000;
@@ -25,55 +26,62 @@
 header {
 	height: 20vw;
 	max-height: 180px;
-	width: 100%;
+	width: 100vw !important;
 }
 
 /* Start of Section Headers */
-.s-header-l, .s-header-r, .s-header-m{
-	height: 10vw;
-	min-height: 100px;
-	max-height: 150px;
+.s-header-c{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	padding: 10vh 0;
 
-	color: var(--color-font-white);
-	background-color: var(--color-primary-1);
+	.s-header-l, .s-header-r, .s-header-m{
+		width: 60%;
+		padding: 2vh 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100px;
+		max-height: 150px;
+		color: var(--color-font-white);
+		background-color: var(--color-primary-1);
+	}
+	
+	.s-header-l{
+		align-self: start;
+		align-items: start;
+		border-radius: 0px 10px 10px 0px;
+		filter: drop-shadow( -5px 5px 5px var(--color-shadow) );
+		padding-left: 10vw;
+	}
 
-	border-radius: 0px 10px 10px 0px;
-	filter: drop-shadow( -5px 5px 5px black );
+	.s-header-m{
+		align-self: center;
+		align-items: center;
+		border-radius: 10px 10px 10px 10px;
+		filter: drop-shadow( 0 5px 5px var(--color-shadow) );
+	}
 
-	margin-bottom: 100px;
+	.s-header-r{
+		align-self: end;
+		align-items: end;
+		border-radius: 10px 0px 0px 10px;
+		filter: drop-shadow( 5px 5px 5px var(--color-shadow) );
+		padding-right: 10vw;
+	}
 }
 
 .s-header-l h2, .s-header-r h2, .s-header-m h2{
 	font-size: clamp(50px, 5vw, 80px);
-	height: 66%;
-	filter: drop-shadow( 0px 0px 3.5px black );
 	font-weight: 700;
-}
-
-.s-header-l {
-	margin-right: 30vw !important;
-	h2 {left: 10vw;}
-}
-
-.s-header-r {
-	text-align: right;
-	margin-left: 30vw !important;
-	border-radius: 10px 0px 0px 10px;
-	filter: drop-shadow( 5px 5px 5px black );
-	h2 {right: 10vw;}
-}
-
-.s-header-m {
-	margin: 0px auto !important;
-	border-radius: 10px;
-	max-width: none;
-	filter: drop-shadow( 0px 5px 5px black );
 }
 /* End of Section Headers */
 
 /* Start of Footer */
 .footer-credit {
-    height:50px;
+	width: 100vw;
+    height: 50px;
     background-color: var(--color-highlight);
     white-space: nowrap;
 }
@@ -85,7 +93,7 @@ header {
 }
 
 footer{
-    width: 100%;
+    width: 100vw;
     position: relative;
     bottom: 0;
     background-color: var(--color-primary-1);
@@ -247,6 +255,9 @@ input::placeholder{
 
 /* Start of Nav v2 */
 .nav-flex {
+	width: 100vw;
+	position: sticky;
+	top: 0;
 	display: flex;
 	align-items: center;
 	padding: 15px;
@@ -342,21 +353,24 @@ input::placeholder{
 }
 
 .nav-side {
-	position: absolute;
-	right: -300px;
-	display: flex;
+	position: fixed;
+	right: -100%;
+	display: none;
 	flex-direction: column;
 	align-items: end;
 	z-index: 1100;
 	height: 100vh;
 	width: 300px;
+	max-width: 80%;
 	background-color: var(--color-primary-1);
 	filter: drop-shadow(0px 0px 10px var(--color-font-white));
 	transition: 0.5s ease-in-out;
 }
 
 .nav-side.show{
-	right: 0px;
+	right: 0;
+	overflow-y: hidden !important;
+	display: flex;
 }
 
 .nav-side li{
@@ -399,6 +413,15 @@ input::placeholder{
 	font-family: 'Noto Sans TC', serif !important;
 }
 
+.chi{
+	font-family: 'Noto Sans TC', serif;
+}
+
+.eng{
+	font-family: 'Outfit', serif;
+	display: none;
+}
+
 .extender {height: 200px;}
 
 .v-center {
@@ -426,7 +449,7 @@ input::placeholder{
 
 .h-full{ height: 100%; }
 
-.b-solid {border: solid;}
+.b-solid {border: solid !important;}
 
 .b-horizontal {border-right: solid; border-left: solid;}
 
@@ -434,20 +457,19 @@ input::placeholder{
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	background-color: var(--color-primary-1); /* Button color */
+	background-color: var(--color-primary-2); /* Button color */
 	color: var(--color-font-white);
-	border: 2px solid black;
+	border: 2px var(--color-primary-2) black;
 	border-radius: 10px;
 	width: 50px;
 	height: 50px;
 	font-size: 24px;
 	cursor: pointer;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-	transition: background-color 0.3s;
+	transition: 0.3s;
 	z-index: 100;
 }
 
 #scrollToTop:hover {
 	background-color: var(--color-highlight); /* Hover color */
-	color: var(--color-font-black);
 }

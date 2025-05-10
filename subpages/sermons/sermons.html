@@ -130,107 +130,106 @@
 		<!-- End of Sidebar JS -->
 		<!-- End of NavBar v2 -->
 
-		<section class="s1 container-fluid g-0">
-
-			<div class="row g-0 s-header-m" style="width: max( 70vw , 300px ) !important;">
-				<h2 class="v-center text-center" lang="zh-HK">
-					講道重溫
+		<div class="s-header-c">
+			<div class="s-header-m">
+				<h2>
+					<span class="chi">過往講道</span>
+					<span class="eng">Previous Sermons</span>
 				</h2>
 			</div>
+		</div>
 
-			<div class="row g-0">
+		<section class="s1">
+			<div class="video-nav" >
+				<link href="../../components/scrollspy.css" rel="stylesheet">
+				<div class="scroll-spy-main col">
 
-				<div class="col-5 g-0 video-nav" >
-					<link href="../../components/scrollspy.css" rel="stylesheet">
-
-					<div class="scroll-spy-main col">
-
-						<button class="scroll-spy-value" data-video="https://www.youtube.com/embed/p8TSuXT05Dc" lang="zh-HK" style="border-top: solid;">
-							<h3>講道重溫 1</h3>
-							<p>	2022年4月16日</p>
-						</button>
-		
-						<button class="scroll-spy-value" data-video="https://www.youtube.com/embed/bg9SwW_eMys" lang="zh-HK">
-							<h3>講道重溫 2</h3>
-							<p>2019年9月27日</p>
-						</button>
-		
-						<button class="scroll-spy-value" data-video="https://www.youtube.com/embed/3DFQeU9tVqk" lang="zh-HK">
-							<h3>講道重溫 3</h3>
-							<p>2022年4月15日</p>
-						</button>
-						
+					<button class="scroll-spy-value" data-video="https://www.youtube.com/embed/p8TSuXT05Dc" lang="zh-HK" style="border-top: solid;">
+						<h3>講道重溫 1</h3>
+						<p>	2022年4月16日</p>
+					</button>
+	
+					<button class="scroll-spy-value" data-video="https://www.youtube.com/embed/bg9SwW_eMys" lang="zh-HK">
+						<h3>講道重溫 2</h3>
+						<p>2019年9月27日</p>
+					</button>
+	
+					<button class="scroll-spy-value" data-video="https://www.youtube.com/embed/3DFQeU9tVqk" lang="zh-HK">
+						<h3>講道重溫 3</h3>
+						<p>2022年4月15日</p>
+					</button>
+					
+					<button class="scroll-spy-value">
 						<a href="https://www.youtube.com/channel/UCY_SdaB1Dior0gNeTnj-Fdw" target="_blank">
-							<button class="scroll-spy-value"lang="zh-HK">
-								<h3 style="font-size: 28px;">聖公會主愛堂Youtube頻道</h3>
-							</button>
+							<h3>
+								<span class="chi">Youtube<br>頻道</span>
+								<span class="eng">Our Youtube Channel</span>
+							</h3>
 						</a>
-
-					</div>
-
+					</button>
 				</div>
-
-				<!-- Video Viewer -->
-				<div class="col g-0">
-					<div class="video-viewport">
-						<iframe width="90%" height="800" src="https://www.youtube.com/embed/p8TSuXT05Dc"
-							frameborder="1" allowfullscreen></iframe>
-					</div>
-				</div>
-				<script>
-					// Function to embed Video
-					function embedVideo(videoURL) {
-						try {
-							const videoFrame = document.querySelector('.video-viewport iframe');
-							if (videoFrame) {
-								videoFrame.src = videoURL;
-							} else {
-								console.error("Could not find the video iframe element.");
-							}
-						} catch (error) {
-							console.error("Error embedding video:", error);
-						}
-					}
-
-					// Event listener for buttons
-					document.querySelectorAll('.scroll-spy-value').forEach(button => {
-						button.addEventListener('click', function () {
-							try {
-								const videoURL = this.getAttribute('data-video'); // Get the video URL from data attribute
-								if (videoURL) {
-									embedVideo(videoURL); // Call the function to embed the video
-								} else {
-									console.warn("Button is missing data-video attribute.");
-								}
-							} catch (error) {
-								console.error("Error handling button click:", error);
-							}
-						});
-					});
-
-					// Initialize with the first video
-					document.addEventListener('DOMContentLoaded', function () {
-						try {
-							const firstButton = document.querySelector('.scroll-spy-value');
-							if (firstButton) {
-								const initialVideoURL = firstButton.getAttribute('data-video');
-								if (initialVideoURL) {
-									embedVideo(initialVideoURL);
-								} else {
-									console.warn("First button is missing data-video attribute.");
-									// Optionally, set a default video URL here if you have one:
-									// embedVideo("https://www.youtube.com/embed/YOUR_DEFAULT_VIDEO_ID");
-								}
-							} else {
-								console.warn("No elements with class 'scroll-spy-value' found.");
-							}
-						} catch (error) {
-							console.error("Error initializing video:", error);
-						}
-					});
-				</script>
 			</div>
 
+			<!-- Video Viewer -->
+			<div class="video-viewport-c">
+				<div class="video-viewport">
+					<iframe src="https://www.youtube.com/embed/p8TSuXT05Dc"frameborder="1" allowfullscreen>
+					</iframe>
+				</div>
+			</div>
+
+			<script>
+				// Function to embed Video
+				function embedVideo(videoURL) {
+					try {
+						const videoFrame = document.querySelector('.video-viewport iframe');
+						if (videoFrame) {
+							videoFrame.src = videoURL;
+						} else {
+							console.error("Could not find the video iframe element.");
+						}
+					} catch (error) {
+						console.error("Error embedding video:", error);
+					}
+				}
+
+				// Event listener for buttons
+				document.querySelectorAll('.scroll-spy-value').forEach(button => {
+					button.addEventListener('click', function () {
+						try {
+							const videoURL = this.getAttribute('data-video'); // Get the video URL from data attribute
+							if (videoURL) {
+								embedVideo(videoURL); // Call the function to embed the video
+							} else {
+								console.warn("Button is missing data-video attribute.");
+							}
+						} catch (error) {
+							console.error("Error handling button click:", error);
+						}
+					});
+				});
+
+				// Initialize with the first video
+				document.addEventListener('DOMContentLoaded', function () {
+					try {
+						const firstButton = document.querySelector('.scroll-spy-value');
+						if (firstButton) {
+							const initialVideoURL = firstButton.getAttribute('data-video');
+							if (initialVideoURL) {
+								embedVideo(initialVideoURL);
+							} else {
+								console.warn("First button is missing data-video attribute.");
+								// Optionally, set a default video URL here if you have one:
+								// embedVideo("https://www.youtube.com/embed/YOUR_DEFAULT_VIDEO_ID");
+							}
+						} else {
+							console.warn("No elements with class 'scroll-spy-value' found.");
+						}
+					} catch (error) {
+						console.error("Error initializing video:", error);
+					}
+				});
+			</script>
 		</section>
 
 		<div class="extender"></div>
