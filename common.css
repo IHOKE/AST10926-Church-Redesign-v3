@@ -7,6 +7,7 @@
 	--color-accent: #780000;
 	--color-white:#FDF0D5;
 	--color-highlight:#C1121F;
+	--color-shadow: gray;
 
 	--color-font-white:#ffffff;
 	--color-font-black:#000000;
@@ -63,8 +64,12 @@ header {
 	h2 {right: 10vw;}
 }
 
-.s-header-m {
-	margin: 0px auto !important;
+.s-header-m{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10vw;
 	border-radius: 10px;
 	max-width: none;
 	filter: drop-shadow( 0px 5px 5px black );
@@ -73,6 +78,7 @@ header {
 
 /* Start of Footer */
 .footer-credit {
+	width: 100vw;
     height:50px;
     background-color: var(--color-highlight);
     white-space: nowrap;
@@ -247,6 +253,8 @@ input::placeholder{
 
 /* Start of Nav v2 */
 .nav-flex {
+	position: sticky;
+	top: 0;
 	display: flex;
 	align-items: center;
 	padding: 15px;
@@ -342,21 +350,24 @@ input::placeholder{
 }
 
 .nav-side {
-	position: absolute;
-	right: -300px;
-	display: flex;
+	position: fixed;
+	right: -100%;
+	display: none;
 	flex-direction: column;
 	align-items: end;
 	z-index: 1100;
 	height: 100vh;
 	width: 300px;
+	max-width: 80%;
 	background-color: var(--color-primary-1);
 	filter: drop-shadow(0px 0px 10px var(--color-font-white));
 	transition: 0.5s ease-in-out;
 }
 
 .nav-side.show{
-	right: 0px;
+	right: 0;
+	overflow-y: hidden !important;
+	display: flex;
 }
 
 .nav-side li{
@@ -397,6 +408,15 @@ input::placeholder{
 /* Helper Classes*/
 .font-HK {
 	font-family: 'Noto Sans TC', serif !important;
+}
+
+.chi{
+	font-family: 'Noto Sans TC', serif;
+}
+
+.eng{
+	font-family: 'Outfit', serif;
+	display: none;
 }
 
 .extender {height: 200px;}
