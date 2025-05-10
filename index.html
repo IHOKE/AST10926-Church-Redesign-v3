@@ -153,16 +153,16 @@
 		<!-- End of NavBar v2 -->
 
 		<!-- Start of Header -->
-		<header class="container-fluid"><div class="row">
-			<div class="col-1"></div>
-			<div class="col header-col">
+		<header class="container-fluid g-0"><div class="row">
+			<div class="col-1 g-0"></div>
+			<div class="col g-0 header-col">
 				<div class="header-godray">
 					<div class="header-emblem h-center">
 						<img src="images/common/emblem.svg" class="h-center">
 					</div>
 				</div>
 				
-				<p lang="zh-HK" class="header-body"></p>
+				<p class="chi header-body"></p>
 
 				<script>
 					document.addEventListener("DOMContentLoaded", (event) => {
@@ -261,61 +261,102 @@
 		<!-- End of Section 1 -->
 
 		<!-- Start of Section 2 - News-->
-		<section class="s2 container-fluid g-0" id="news">
+		<section class="s-news" id="news">
 
-			<div class="row g-0"><div class="col g-0">
-				<div class="s-header-l"><h2 class="v-center" lang="zh-HK">最新資訊</h2></div>
-			</div></div>
+			<div class="s-header-l">
+				<h2 class="v-center">
+					<span class="chi">最新資訊</span>
+					<span class="eng"></span>
+				</h2>
+			</div>
 
-			<div class="row g-0">
-				<div class="s2-left"></div>
+			<div class="s-news-main">
 
-				<link href="components/scrollspy.css" rel="stylesheet">
-				<div class="scroll-spy-main col g-0">
-					<button class="scroll-spy-value" onclick="showContent(1)">
-						<h3>頭條 1</h3>
-						<p>2025年5月10日</p>
-					</button>
-					<button class="scroll-spy-value" onclick="showContent(2)">
-						<h3>頭條 2</h3>
-						<p>2025年4月17日</p>
-					</button>
-					<button class="scroll-spy-value" onclick="showContent(3)">
-						<h3>頭條 3</h3>
-						<p>2025年3月29日</p>
-					</button>
-					<button class="scroll-spy-value" onclick="showContent(4)">
-						<h3>頭條 4</h3>
-						<p>2025年2月15日</p>
-					</button>
-					<button class="scroll-spy-value" onclick="showContent(5)">
-						<h3>頭條 5</h3>
-						<p>2024年12月13日</p>
-					</button>
+				<div class="s-news-scrollspy">
+					<link href="components/scrollspy.css" rel="stylesheet">
+
+					<div class="scroll-spy-main">
+						<button class="scroll-spy-value" onclick="showContent(1)">
+							<h3>
+								<span class="chi">頭條 1</span>
+								<span class="eng">Headline 1</span>
+							</h3>
+							<p>
+								<span class="chi">2025年5月10日</span>
+								<span class="eng">2025 May 10</span>
+							</p>
+						</button>
+
+						<button class="scroll-spy-value" onclick="showContent(2)">
+							<h3>
+								<span class="chi">頭條 2</span>
+								<span class="eng">Headline 2</span>
+							</h3>
+							<p>
+								<span class="chi">2025年4月17日</span>
+								<span class="eng">2025 April 17</span>
+							</p>
+						</button>
+
+						<button class="scroll-spy-value" onclick="showContent(3)">
+							<h3>
+								<span class="chi">頭條 3</span>
+								<span class="eng">Headline 3</span>
+							</h3>
+							<p>
+								<span class="chi">2025年3月29日</span>
+								<span class="eng">2025 March 29</span>
+							</p>
+						</button>
+
+						<button class="scroll-spy-value" onclick="showContent(4)">
+							<h3>
+								<span class="chi">頭條 4</span>
+								<span class="eng">Headline 4</span>
+							</h3>
+							<p>
+								<span class="chi">2025年2月15日</span>
+								<span class="eng">2025 Feburary 15</span>
+							</p>
+						</button>
+
+						<button class="scroll-spy-value" onclick="showContent(5)">
+							<h3>
+								<span class="chi">頭條 5</span>
+								<span class="eng">Headline 5</span>
+							</h3>
+							<p>
+								<span class="chi">2024年12月13日</span>
+								<span class="eng">2024 December 13</span>
+							</p>
+						</button>
+					</div>
 				</div>
 			
-				<div class="col s2-right">
-					<div class="s2-slide" id="contentBox">
-						<h3>
-							<span class="chi">香港聖公會西九龍教區婦女團主辦 走訪《麥理浩夫人中心》</span>
-							<span class="eng"></span>
-						</h3>
-						<div class="s2-slide-img text-center"><img src="images/index/HKSKH Lady MacLehose Centre.png" alt="HKSKH Lady MacLehose Centre"></div>
-						<p class="s2-slide-body overflow-y" style="height: 200px; margin-top: 15px;">
-							時間 ： 上午10:45 – 下午14:00<br>
-							地點 ： 香港聖公會麥理浩夫人中心 (石籬和宜合道22號)
-							<br><br>
-							西九龍教區婦女團本屆主題為《跨代手牽手•侍主肩並肩》！希望籍著不同活動，走到教區教省各處，認識聖公會的三頭馬車，怎樣將上帝的愛傳給每一個人！並透過團契活動，讓我們與不同年齡層的弟兄姊妹相知、相交，彰顯主基督的愛。
-							<br><br>
-							本團將於2025年5月10日(星期六)舉行走訪《麥理浩夫人中心》，認識聖公會在葵涌、青衣及荃灣服務范圍最大，層面最廣的社服機構。詳情如下:
-							<br><br>
-							活動內容 ： 中心服務介紹、明陣、葵華健樂中心等服務 - 參觀及體驗、麥理浩餐廳～中式、西式午餐<br>
-							名額 ： 80人 (每牧區6名 + 2名後備)<br>
-							費用 ： 全免<br>
-							報名及查詢： 可聯絡貴堂婦女部部長或代表<br>
-							截止日期 ： 2025年4月28日(星期一)
-						</p>
+				<div class="s-news-right" id="contentBox">
+					<h4>
+						<span class="chi">香港聖公會西九龍教區婦女團主辦 走訪《麥理浩夫人中心》</span>
+						<span class="eng"></span>
+					</h4>
+
+					<div class="s-news-slide-img text-center">
+						<img src="images/index/HKSKH Lady MacLehose Centre.png" alt="HKSKH Lady MacLehose Centre">
 					</div>
+					
+					<p class="chi overflow-y" style="margin-top: 15px;">
+						時間：上午10:45 – 下午14:00<br>
+						地點：香港聖公會麥理浩夫人中心 (石籬和宜合道22號)
+						<br><br>
+						西九龍教區婦女團本屆主題為《跨代手牽手•侍主肩並肩》！希望籍著不同活動，走到教區教省各處，認識聖公會的三頭馬車，怎樣將上帝的愛傳給每一個人！並透過團契活動，讓我們與不同年齡層的弟兄姊妹相知、相交，彰顯主基督的愛。
+						<br><br>
+						本團將於2025年5月10日(星期六)舉行走訪《麥理浩夫人中心》，認識聖公會在葵涌、青衣及荃灣服務范圍最大，層面最廣的社服機構。詳情如下:
+						<br><br>
+						活動內容 ： 中心服務介紹、明陣、葵華健樂中心等服務 - 參觀及體驗、麥理浩餐廳～中式、西式午餐<br>
+						名額 ： 80人 (每牧區6名 + 2名後備)<br>
+						費用 ： 全免<br>
+						報名及查詢： 可聯絡貴堂婦女部部長或代表<br>
+						截止日期 ： 2025年4月28日(星期一)
+					</p>
 				</div>
 		</section>
 		<!-- End of Section 2 -->
@@ -450,11 +491,11 @@
 
 		<div class="extender"></div>
 
-		<div class="row footer-credit">
+		<div class="row footer-credit g-0">
 			<div class="col-12 text-center">
 				<h2 class="v-center">Website presented by <b>Designation HKE</b> - Founded by <b>IHOKE</b></h2>
 			</div>
-			</div>
+		</div>
 			
 			<!-- Start of Footer -->
 			<footer>

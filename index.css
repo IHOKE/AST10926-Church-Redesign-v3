@@ -5,7 +5,6 @@ header {
 	background-image: url(images/index/header.jpg);
 	background-position: center;
 	background-size: cover;
-
 	height: 450px;
 	max-height: 450px !important;
 }
@@ -60,7 +59,7 @@ header {
 /* Start of Section 1 */
 .s1 {
 	background: var(--color-primary-2);
-	width: 100% !important;
+	width: 100vw !important;
 }
 
 .s1-header {
@@ -80,72 +79,75 @@ header {
 }
 
 .s1-fade-start {
-	height:20px;
-	width: 100vw;
+	height: 20px;
+	width: 100%;
 	background:linear-gradient(0deg, var(--color-primary-2) 0%, rgba(0,0,0,0.4) 100%);
 	margin-bottom: 20px;
 }
 
 .s1-fade-end {
 	height:30px;
-	width: 100vw;
+	width: 100%;
 	background:linear-gradient(180deg, var(--color-primary-2) 0%, var(--color-white) 100%);
 	margin: 20px 0px;
 }
 /* End of Section 1 */
 
 /* Start of Section 2 */
-.s2 {
-	padding: 100px 0px 130px 0px !important;
+.s-news-main{
+	display:flex;
+	align-content: stretch;
+	flex-grow: 1;
+	width: 100vw;
+	padding: 0 20vw 0 0;
+	margin-bottom: 15vh;
+	img{
+		overflow: hidden;
+		height: 30%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+
+	h4{
+		font-size: max(3.5vw, 20px);
+		margin: 0 0 4vh 0;
+	}
+
+	.scroll-spy-value{
+		min-width: 150px;
+	}
 }
 
-.s2-left {
-	width: 10vw !important;
+.s-news-scrollspy{
+	padding: 0 0 0 2vw;
 	background-color: var(--color-font-white);
-	border-top: var(--color-font-black) solid;
-	border-bottom: var(--color-font-black) solid;
+	border-top: solid 2px var(--color-font-black);
+	border-bottom: solid 2px var(--color-font-black);
+	margin: 0;
+	display: flex;
+	width: 40%;
+	flex-grow: 1;
 }
 
-.s2-right {
-	--h-s2-right: 600px;
-	height: var(--h-s2-right);
-
+.s-news-right{
 	background-color: var(--color-font-white);
-
+	padding: 10vh 4vw 4vh 4vw;
 	border: solid;
 	border-radius: 0px 25px 25px 0px;
-	margin: 0px 20vw 0px 0px;
+
+	p{
+		height: 30vh;
+		font-size: max(1.75vw, 17.5px);
+		font-weight: 500;
+	}
 }
 
-.s2-slide {
+.s-news-slide {
 	height: 100%;
 	padding: 30px 2vw 30px 2vw;
 }
 
-.s2-slide h3{
-	font-size: 40px;
-	font-weight: 700;
-}
-
-.s2-slide-img {
-	border: solid 2px;
-	height: 275px;
-	border-radius: 10px;
-	overflow: hidden;
-}
-
-.s2-slide-img img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-.s2-slide-body {
-	padding: 0px 10px 0px 0px;
-	text-align: justify;
-	text-justify: inter-word;
-	font-size: 20px;
-}
 /* Start of Section 2 */
 
 /* Start of Section 3 */
@@ -338,6 +340,7 @@ header {
 	display: flex;
 	padding: 15px max(12vw, 60px) !important;
 	background-color: var(--color-highlight);
+	width: 100vw !important;
 }
 
 .s5 .col{

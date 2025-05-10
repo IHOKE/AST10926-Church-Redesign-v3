@@ -26,7 +26,7 @@
 header {
 	height: 20vw;
 	max-height: 180px;
-	width: 100%;
+	width: 100vw !important;
 }
 
 /* Start of Section Headers */
@@ -79,7 +79,7 @@ header {
 /* Start of Footer */
 .footer-credit {
 	width: 100vw;
-    height:50px;
+    height: 50px;
     background-color: var(--color-highlight);
     white-space: nowrap;
 }
@@ -91,7 +91,7 @@ header {
 }
 
 footer{
-    width: 100%;
+    width: 100vw;
     position: relative;
     bottom: 0;
     background-color: var(--color-primary-1);
@@ -253,6 +253,7 @@ input::placeholder{
 
 /* Start of Nav v2 */
 .nav-flex {
+	width: 100vw;
 	position: sticky;
 	top: 0;
 	display: flex;
