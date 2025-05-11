@@ -333,7 +333,7 @@ input::placeholder{
 
 .nav-side-bg{
 	display: flex;
-	position: absolute;
+	position: sticky;
 	top: 0px; right: 0px;
 	height: 100%; width: 100%;
 	backdrop-filter: blur(2.5px);
