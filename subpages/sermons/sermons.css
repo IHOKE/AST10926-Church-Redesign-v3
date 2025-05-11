@@ -15,7 +15,8 @@
 	margin: auto;
 	height: 100%;
 	padding: 0px;
-	width: 18vw;
+	width: 35vw;
+	border: none !important;
 }
 
 .scroll-spy-main button{
@@ -30,8 +31,10 @@
 
 .scroll-spy-value{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+	text-align: center !important;
 	a{
 		color: var(--color-font-black);
 		display: block;
@@ -40,6 +43,20 @@
 		text-decoration: none;
 		box-sizing: border-box;
 	}
+
+	h3{
+		font-size: max(2.5vw, 25px) !important;
+		margin: 0 0 -1.5vh 0;
+		white-space: nowrap;
+	}
+
+	p{
+		font-size: max(1.8vw, 18px) !important;
+	}
+}
+
+.scroll-spy-value:nth-last-child(1){
+	border:none;
 }
 
 .scroll-spy-value:hover{

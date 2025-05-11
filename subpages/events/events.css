@@ -1,10 +1,13 @@
 @charset "utf-8";
+body{
+	--color-select: #f1f1f1;
+}
 /* start of Calendar */
 .calendar {
 	margin: 0 -10vh 60px 10% !important;
 	width: 80% !important;
 	background-color: #fff;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	filter: drop-shadow(0 0 5px var(--color-shadow));
 	border-radius: 25px;
 }
 
@@ -20,19 +23,18 @@
 }
 
 .calendar-header button {
-
 	height: 50px;
 	width: 50px;
-	border-radius: 50px;
-
+	border-radius: 100%;
+	transition: 0.3s;
 	line-height: 0px;
 	margin: auto 0px;
-
-	border: solid black 1.75px;
-	background-color: transparent;
+	border: solid var(--color-select);
+	color: var(--color-font-black);
+	background-color: var(--color-select);
 	font-size: 1.5em;
 	cursor: pointer;
-
+	filter: drop-shadow(0 0 5px var(--color-shadow));
 }
 
 .calendar-header button:hover {
@@ -71,7 +73,21 @@
 }
 
 .calendar-dates div:hover {
-	background-color: #f1f1f1;
+	border-radius: 5px;
+	background-color: var(--color-select);
+	border: solid var(--color-highlight);
+}
+
+.event-date {
+	background-color: var(--color-primary-2);
+	color: var(--color-font-white);
+	border-radius: 5px;
+}
+
+.event-date:hover {
+	border-radius: 5px;
+	border: solid var(--color-highlight);
+	background-color: var(--color-primary-2) !important;
 }
 
 .current-date {
@@ -80,29 +96,17 @@
 	border-radius: 5px;
 }
 
-.event-date {
-	background-color: #93f3c8; /* Light green background for event days */
-	border-radius: 5px;
-}
-
-.event-date:hover {
-	background-color: #c3e6cb; /* Slightly darker green on hover */
-}
-
 /* End of Calendar */
 
 .s2 {
 	width: 80vw;
 	height: 750px;
-
 	background-color: var(--color-font-white);
-
-	border: solid var(--color-font-black);
 	border-radius: 25px 25px 0px 0px;
 	border-bottom: none;
-
 	margin: 0px auto;
 	padding: 30px 40px;
+	filter: drop-shadow(0 0 5px var(--color-shadow));
 }
 
 .s2 h2 {
@@ -117,13 +121,11 @@
 
 .s2-img {
 	height: 300px;
-	width: 90%;
+	width: 100%;
 	margin: 30px auto;
-
-	border: solid;
 	border-radius: 20px;
-
 	overflow: hidden;
+	filter: drop-shadow(0 0 5px var(--color-shadow));
 }
 
 .s2-img img {
