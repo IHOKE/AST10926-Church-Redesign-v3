@@ -236,7 +236,8 @@
 
 @media(max-width: 1200px) {
 	.box{
+		width: 100%;
 		margin: 0 0 0 2vw;
-		justify-content: center;
+		padding: 0 0 0 10vw !important;
 	}
 }
