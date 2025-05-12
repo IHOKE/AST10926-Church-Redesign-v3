@@ -47,7 +47,9 @@
 		<h6>And less fucking stress<br>If you are reading till this point, you can tell my mentals aren't exactly phenomenal</h6>
 	</li>
 </ul>
-<h1><b><pre>Also fucking piece of shit of Charles for taking Marco away from school when I deliberately asked Marco to stay to do the presentation.
+<h1><b><pre>Also fucking piece of shit of Charles for taking
+Marco away from school when I deliberately asked Marco to
+stay to do the presentation.
 </pre></b></h1>
 
 <h3>v4.0 contact.html & sermons.html</h3><hr>
