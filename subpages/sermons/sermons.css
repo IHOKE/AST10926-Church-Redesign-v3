@@ -20,7 +20,7 @@
 }
 
 .scroll-spy-main button{
-	height: 140px;
+	height: 20vh;
 	width: 100%;
 }
 
@@ -45,13 +45,13 @@
 	}
 
 	h3{
-		font-size: max(2.5vw, 25px) !important;
+		font-size: clamp(20px, 5vh, 35px) !important;
 		margin: 0 0 -1.5vh 0;
 		white-space: nowrap;
 	}
 
 	p{
-		font-size: max(1.8vw, 18px) !important;
+		font-size: clamp(15px, 3vh, 20px) !important;
 	}
 }
 

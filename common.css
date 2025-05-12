@@ -80,176 +80,189 @@ header {
 
 /* Start of Footer */
 .footer-credit {
+	border: solid var(--color-highlight) 1.5px;
+	border-left: none; border-right: none;
+	transition: 0.3s ease-in-out;
 	width: 100vw;
-    height: 50px;
-    background-color: var(--color-highlight);
-    white-space: nowrap;
+	height: 50px;
+	background-color: var(--color-highlight);
+	white-space: nowrap;
+	a{
+		text-decoration: none;
+	}
+
+}
+
+.footer-credit:hover{
+	h2{color: var(--color-highlight);}
+	background-color: var(--color-font-white);
+	border-color: var(--color-highlight);
 }
 
 .footer-credit h2 {
-    margin: auto;
-    font-size: 25px;
-    color: #fff;
+	margin: auto;
+	font-size: 25px;
+	color: #fff;
 }
 
 footer{
-    width: 100vw;
-    position: relative;
-    bottom: 0;
-    background-color: var(--color-primary-1);
-    color: var(--color-font-white);
-    padding: 3% 5%;
-    font-size: 13px;
-    line-height: 20px;
+	width: 100vw;
+	position: relative;
+	bottom: 0;
+	background-color: var(--color-primary-1);
+	color: var(--color-font-white);
+	padding: 3% 5%;
+	font-size: 13px;
+	line-height: 20px;
 }
 
 .fot-row{
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 .fot-col{
-    padding: 10px ;
+	padding: 10px ;
 }
 
 .fot-col .logo-container {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
+	display: flex; /* Use flexbox for alignment */
+	align-items: center; /* Center items vertically */
 }
 .logo{
-    width: 100px;
-    margin-bottom: 30px;
-    margin-right: 10px;
+	width: 100px;
+	margin-bottom: 30px;
+	margin-right: 10px;
 }
 .fot-col .logo-container h6{
-    color: #fff; /* Change the text color */
-    font-family: "Kanit", sans-serif; /* Use the same font */
-    font-weight: 600; /* Adjust font weight */
-    font-size: 40px; /* Adjust font size as needed */
+	color: #fff; /* Change the text color */
+	font-family: "Kanit", sans-serif; /* Use the same font */
+	font-weight: 600; /* Adjust font weight */
+	font-size: 40px; /* Adjust font size as needed */
 }
 .fot-col h3{
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
+	width: fit-content;
+	margin-bottom: 40px;
+	position: relative;
 }
 .fot-col p{
-    font-size: 15px;
+	font-size: 15px;
 }
 .fot-col a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
 }
 .fot-col a:hover{
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .email{
-    width: fit-content;
-    margin: 20px 0;
+	width: fit-content;
+	margin: 20px 0;
 }
 .fot-col ul{
-    padding-left: 0%;
+	padding-left: 0%;
 }
 .fot-col ul li{
-    list-style: none;
-    margin-bottom: 12px;
+	list-style: none;
+	margin-bottom: 12px;
 }
 ul li a{
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 .fot-col form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid#fff;
-    margin-bottom: 50px;
+	padding-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid#fff;
+	margin-bottom: 50px;
 }
 .fot-col .inputBox {
-    position: relative;
-    width: 100%;
-    margin-top: 20px; /* Adjust as needed */
+	position: relative;
+	width: 100%;
+	margin-top: 20px; /* Adjust as needed */
 }
 .fot-col form .inputBox input{
-    width: 100%;
-    padding: 10px 0;
-    border: none;
-    background: transparent;
-    color: #fff;
-    outline: none;
-    resize: none;
-    font-size: 15px;
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	background: transparent;
+	color: #fff;
+	outline: none;
+	resize: none;
+	font-size: 15px;
 }
 .fot-col .inputBox span {
-    position: absolute;
-    left: 0;
-    pointer-events: none;
-    padding: 5px 0;
-    margin: 10px 0;
-    color: #fff; /* Placeholder color */
-    transition: 0.5s;
-    font-family: "Kanit";
-    font-weight: 400;
-    font-size: 25px;
+	position: absolute;
+	left: 0;
+	pointer-events: none;
+	padding: 5px 0;
+	margin: 10px 0;
+	color: #fff; /* Placeholder color */
+	transition: 0.5s;
+	font-family: "Kanit";
+	font-weight: 400;
+	font-size: 25px;
 }
 .fot-col form .inputBox input:focus ~ span,
 .fot-col form .inputBox input:valid ~ span{
-    color: var(--color-white);
-    font-size: 20px;
-    transform: translateY(-24px);
+	color: var(--color-white);
+	font-size: 20px;
+	transform: translateY(-24px);
 }
 .fot-col form .sub-btn{
-    width: 100px;
-    font-weight: 600;
-    display: inline-block;
-    background: transparent;
-    border: 2px solid var(--color-white);
-    border-radius: 40px;
-    text-decoration: none;
+	width: 100px;
+	font-weight: 600;
+	display: inline-block;
+	background: transparent;
+	border: 2px solid var(--color-white);
+	border-radius: 40px;
+	text-decoration: none;
 }
 
 .fot-col form .sub-btn:hover{
-    background-color: #fff;
-    color: var(--color-primary-1);
-    box-shadow: 0 0 10px var(--color-white);
+	background-color: #fff;
+	color: var(--color-primary-1);
+	box-shadow: 0 0 10px var(--color-white);
 }
 input::placeholder{
-    color: #fff;
-    font-weight: 300;
-    font-size: 18px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 18px;
 }
 
 .line{
-    width: 100%;
-    height: 5px;
-    background: #061b3c;
-    border-radius: 3px;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    overflow: hidden;
+	width: 100%;
+	height: 5px;
+	background: #061b3c;
+	border-radius: 3px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	overflow: hidden;
 }
 .line span{
-    width: 15px;
-    height: 100%;
-    background: var(--color-white);
-    border-radius: 3px;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    animation: moving 2s linear infinite;
+	width: 15px;
+	height: 100%;
+	background: var(--color-white);
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	animation: moving 2s linear infinite;
 }
 @keyframes moving{
-    0%{
-        left: -20px;
-    }
-    100%{
-        left: 100%;
-    }
+	0%{
+		left: -20px;
+	}
+	100%{
+		left: 100%;
+	}
 }
 /* End of Footer */
 
@@ -316,17 +329,30 @@ input::placeholder{
 	font-weight: 600;
 }
 
-.nav-flex li:nth-child(n+2):nth-child(-n+5) {
+.nav-flex li:nth-child(n+2):nth-child(-n+3) {
 	@media (max-width: 1100px) {
 		display: none;
 	}
 }
 
-.nav-flex li:nth-child(n+6):nth-child(-n+7) {
-	@media (max-width: 660px) {
+.nav-flex li:nth-child(4) {
+	@media (max-width: 1000px) {
 		display: none;
 	}
 }
+
+.nav-flex li:nth-child(5) {
+	@media (max-width: 850px) {
+		display: none;
+	}
+}
+
+.nav-flex li:nth-child(n+6):nth-last-child(n+3) {
+	@media (max-width: 675px) {
+		display: none;
+	}
+}
+
 .nav-flex li:nth-last-child(2){
 	margin-right: 15px;
 }
@@ -347,9 +373,9 @@ input::placeholder{
 }
 
 .nav-side-bg.show {
-    display: flex; /* Set to flex when shown */
-    opacity: 1;
-    visibility: visible;
+	display: flex; /* Set to flex when shown */
+	opacity: 1;
+	visibility: visible;
 }
 
 .nav-side {

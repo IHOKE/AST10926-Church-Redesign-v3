@@ -68,9 +68,11 @@
 	width: 30px;
 }
 .information .contactInfo .box .text{
+	width: 90%;
 	position: relative;
 	flex-direction: column;
 	margin-left: 20px;
+	padding-right: 10%;
 	font-size: 18px;
 	color: #A1E3F8;
 	font-family: 300;

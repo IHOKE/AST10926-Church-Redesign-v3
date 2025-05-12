@@ -13,11 +13,9 @@ body {
 	height: var(--pdf-height);
 	max-width: 250px !important;
 	margin-right: calc(var(--s1-gutter)/2);
-
-	border: solid;
 	border-radius: 0px 15px 15px 0px;
 	border-left: none;
-
+	filter: drop-shadow(0 0 5px var(--color-shadow));
 	background-color: var(--color-font-white);
 }
 
@@ -45,10 +43,9 @@ body {
 .pdf-viewport {
 	height: var(--pdf-height);
 	margin-left: calc(var(--s1-gutter)/2);
-
-	border: solid;
 	border-radius: 15px 0px 0px 15px;
 	border-right: none;
-
 	overflow: hidden;
+	filter: drop-shadow(0 0 5px var(--color-shadow));
+	background-color: var(--color-font-white);
 }
